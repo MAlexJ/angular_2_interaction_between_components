@@ -1,0 +1,50 @@
+<h1>Header</h1>
+<hr>
+<dynamic_change_style>Loading...</dynamic_change_style>
+<hr>
+<check-app
+        [checkBoxFirst]="_checkBoxFirst"
+        [checkBoxSecond]="_checkBoxSecond"
+        (onChanged_state_radio)="_onChanged_state_radio($event)"
+        [value_radio]="_value_radio"
+>Loading...
+</check-app>
+
+<br>
+<hr>
+<ng-class-component></ng-class-component>
+
+<br>
+<hr>
+
+<h2>Component: InputComponent</h2>
+<input-app [inputText]="inputTextComponent"></input-app>
+<br>
+<h2>Component: TextComponent</h2>
+<text-app [textField]="inputFieldComponent"></text-app>
+<br>
+<h2>Component: ChildComponent</h2>
+<child-comp [childText]="textChildComponent"></child-comp>
+
+<br>
+<hr>
+<h2>Component: AppComponent</h2>
+<br>
+<input type="text" #inputIC/>`
+<button (click)="addTextInTextComponent(inputIC.value)">Add text in IC</button>
+<br>
+<br>
+<input type="text" #inputIT/>`
+<button (click)="addTextInFieldComponent(inputIT.value)">Add text in TC</button>
+<br>
+<br>
+<input type="text" #inputCT/>`
+<button (click)="addTextInChildComponent(inputCT.value)">Add text in CC</button>
+<br>
+<br>
+<hr>
+<h2>Количество кликов: {{clicks}}</h2>
+<child-event-app (onChange)="onChanged($event)"></child-event-app>
+<br>
+<br>
+<hr>

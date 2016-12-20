@@ -1,0 +1,29 @@
+<h4>Select your programming skills</h4>
+<div>
+    <label>
+        <input
+                #first_radio
+                type="radio"
+                name="radioBtn"
+                (click)="eventChangeRadioButton(first_radio.value)"
+                value="{{checkBoxFirst}}"
+        />
+        {{checkBoxFirst}}
+    </label>
+</div>
+<div>
+    <label>
+        <input
+                #second_radio
+                type="radio"
+                name="radioBtn"
+                (click)="eventChangeRadioButton(second_radio.value)"
+                value="{{checkBoxSecond}}"
+        />
+        {{checkBoxSecond}}
+    </label>
+</div>
+<br>
+<div>
+    Selected Skills: <strong>{{value_radio}}</strong>
+</div>

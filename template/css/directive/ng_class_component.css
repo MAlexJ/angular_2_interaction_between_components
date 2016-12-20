@@ -1,0 +1,12 @@
+.verdanaFont {
+    font-size: 13px;
+    font-family: Verdana, serif;
+    color: #379f00;;
+}
+
+.printFont {
+    font-size: 14px;
+    font-family: "Segoe Print", serif;
+    color: brown;
+    font-weight: bold
+}
